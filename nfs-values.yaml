@@ -36,7 +36,7 @@ persistence:
   # storageClass: "-"
 
   accessMode: ReadWriteOnce
-  size: 10Gi
+  size: 100Mi
 
 ## For creating the StorageClass automatically:
 storageClass:
@@ -77,9 +77,9 @@ resources: {}
   # limits:
   #  cpu: 100m
   #  memory: 128Mi
-  # requests:
+   requests:
   #  cpu: 100m
-  #  memory: 128Mi
+    memory: 512Mi
 
 nodeSelector: {}
 
